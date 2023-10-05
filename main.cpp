@@ -5,13 +5,13 @@ int main() {
     
     bool key = false;
     
-    first_error: 
+    second_error:
     if(key == true)
     {
-        cout << "Error, it must be a natural number\n";
+        cout << "Error, number n should be bigger then number m\n";
         key = false;
     }
-    
+
     int n, m, sum = 0;
 
     cout << "Enter number n: ";
@@ -19,10 +19,10 @@ int main() {
     cout << "Enter number m: ";
     cin >> m;
     
-    if (n <= 0 || m <= 0)
+    if (n <= m)
     {
         key = true;
-        goto first_error;
+        goto second_error;
     }
 
     for(int i = m; i < n; i++)
