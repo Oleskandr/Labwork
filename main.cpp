@@ -17,6 +17,7 @@ int main() {
         if(i % 4 == 0)
         {
             sum += i;
+            printf("%d,\t",i);
         }
     }
 
