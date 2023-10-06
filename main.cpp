@@ -18,7 +18,7 @@ int main() {
     cin >> n;
     cout << "Enter number m: ";
     cin >> m;
-    
+
     if (n <= m)
     {
         key = true;
@@ -34,4 +34,5 @@ int main() {
     }
 
     printf("\nSum of these numbers:\t%d\n", sum);
+    cout << "End program!" << endl;
 }
